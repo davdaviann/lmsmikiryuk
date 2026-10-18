@@ -1,0 +1,39 @@
+/* Inner page hero banner */
+
+.page-hero {
+  padding: 68px 0 48px;
+  border-bottom: 1px solid var(--line);
+  background:
+    radial-gradient(circle at 88% 10%, rgba(255, 216, 77, 0.3), transparent 24%),
+    linear-gradient(180deg, #fffdf8, #ffffff);
+}
+
+.page-title {
+  max-width: 780px;
+  color: var(--ink);
+  font-size: clamp(2.3rem, 5vw, 4rem);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.06em;
+}
+
+.page-description {
+  max-width: 670px;
+  margin-top: 17px;
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+
+.page-hero-note {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  padding: 8px 12px;
+  border: 1px solid #eae3c8;
+  border-radius: 999px;
+  color: #745c1f;
+  background: var(--yellow-soft);
+  font-size: 0.73rem;
+  font-weight: 700;
+}

@@ -1,0 +1,151 @@
+/* Shared: sections, eyebrows, buttons, focus */
+
+.section {
+  padding: 94px 0;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+  color: var(--purple);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.eyebrow-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.section-title {
+  color: var(--ink);
+  font-size: clamp(2rem, 4vw, 3.1rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.05em;
+}
+
+.section-description {
+  max-width: 620px;
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+
+.section-head {
+  max-width: 700px;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+.section-head:not(.left) .section-description {
+  margin-inline: auto;
+}
+
+.section-head.left {
+  margin-left: 0;
+  text-align: left;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 51px;
+  padding: 0 22px;
+  border: 1px solid transparent;
+  border-radius: 13px;
+  font-size: 0.86rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  color: var(--ink);
+  background: var(--yellow);
+  box-shadow: 0 10px 24px rgba(239, 185, 0, 0.22);
+}
+
+.btn-primary:hover {
+  background: #ffe16d;
+  box-shadow: 0 14px 28px rgba(239, 185, 0, 0.3);
+}
+
+.btn-dark {
+  color: white;
+  background: var(--ink);
+  box-shadow: 0 10px 22px rgba(23, 33, 59, 0.17);
+}
+
+.btn-dark:hover {
+  background: #263454;
+}
+
+.btn-purple {
+  color: white;
+  background: var(--purple);
+  box-shadow: 0 10px 22px rgba(116, 89, 232, 0.2);
+}
+
+.btn-purple:hover {
+  background: var(--purple-dark);
+}
+
+.btn-outline {
+  color: var(--ink);
+  border-color: #dcdde4;
+  background: white;
+}
+
+.btn-outline:hover {
+  border-color: var(--ink);
+  background: #fff;
+}
+
+.btn-light {
+  color: var(--ink);
+  background: white;
+  box-shadow: var(--shadow-small);
+}
+
+.btn-light:hover {
+  background: #fff;
+}
+
+.btn-ghost {
+  color: var(--ink);
+  background: transparent;
+}
+
+.btn-sm {
+  min-height: 42px;
+  padding: 0 16px;
+  border-radius: 11px;
+  font-size: 0.77rem;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+summary:focus-visible {
+  outline: 3px solid rgba(116, 89, 232, 0.35);
+  outline-offset: 3px;
+}
